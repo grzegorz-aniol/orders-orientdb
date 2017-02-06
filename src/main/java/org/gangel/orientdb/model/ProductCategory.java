@@ -1,17 +1,18 @@
-package com.epam.plktw.model;
+package org.gangel.orientdb.model;
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
 import lombok.val;
 
 import java.util.LinkedList;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import javax.persistence.Id;
 import javax.persistence.Version;
 
 @Data
+@Builder
 public class ProductCategory {
 
     public static final String PATH_SEPARATOR = "/";
@@ -54,33 +55,5 @@ public class ProductCategory {
         this.categoryPath = list.stream().collect(Collectors.joining());
     }
 
-    public static class Builder {
-        
-        private ProductCategory wrapper = new ProductCategory();
-        
-        public Builder id(final String id) {
-            wrapper.setId(id);
-            return this; 
-        }
-        
-        public Builder categoryName(final String name) {
-            wrapper.setCategoryName(name);
-            return this; 
-        }
-        
-        public Builder parent(ProductCategory parent) {
-            wrapper.setUpperCategory(parent);
-            return this; 
-        }
-        
-        public ProductCategory build() {
-            return this.wrapper; 
-        }
-        
-    }
-    
-    public static Builder builder() {
-        return new Builder();
-    }
     
 }

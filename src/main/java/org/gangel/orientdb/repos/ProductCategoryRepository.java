@@ -1,6 +1,6 @@
-package com.epam.plktw.repos;
+package org.gangel.orientdb.repos;
 
-import com.epam.plktw.model.ProductCategory;
+import org.gangel.orientdb.model.ProductCategory;
 import org.springframework.data.orient.object.repository.OrientObjectRepository;
 import org.springframework.stereotype.Repository;
 

@@ -3,8 +3,9 @@ package com.epam.plktw.repos;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import com.epam.plktw.OrdersOrientdbApplication;
-import com.epam.plktw.model.Product;
+import org.gangel.orientdb.OrdersOrientdbApplication;
+import org.gangel.orientdb.model.Product;
+import org.gangel.orientdb.repos.ProductRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

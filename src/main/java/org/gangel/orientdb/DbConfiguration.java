@@ -1,9 +1,9 @@
-package com.epam.plktw;
+package org.gangel.orientdb;
 
-import com.epam.plktw.repos.AddressRepository;
 import com.orientechnologies.orient.core.serialization.serializer.object.OObjectSerializer;
 import com.orientechnologies.orient.object.serialization.OObjectSerializerContext;
 import com.orientechnologies.orient.object.serialization.OObjectSerializerHelper;
+import org.gangel.orientdb.repos.AddressRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.autoconfigure.orient.OrientAutoConfiguration;
@@ -48,7 +48,7 @@ public class DbConfiguration extends OrientAutoConfiguration {
         serializerContext.bind(new LocalDateSerializer(), factory.db());
         OObjectSerializerHelper.bindSerializerContext(null, serializerContext);
         
-        factory.db().getEntityManager().registerEntityClasses("com.epam.plktw.model");
+        factory.db().getEntityManager().registerEntityClasses("org.gangel.orientdb.model");
     }    
     
 }

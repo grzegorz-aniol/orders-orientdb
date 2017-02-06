@@ -1,10 +1,10 @@
-package com.epam.plktw.repos;
+package org.gangel.orientdb.repos;
 
-import com.epam.plktw.model.Customer;
+import org.gangel.orientdb.model.Order;
 import org.springframework.data.orient.object.repository.OrientObjectRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CustomerRepository extends OrientObjectRepository<Customer> {
+public interface OrderRepository extends OrientObjectRepository<Order> {
 
 }

@@ -4,8 +4,9 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 import com.epam.plktw.InspectObj;
-import com.epam.plktw.OrdersOrientdbApplication;
-import com.epam.plktw.model.Address;
+import org.gangel.orientdb.OrdersOrientdbApplication;
+import org.gangel.orientdb.model.Address;
+import org.gangel.orientdb.repos.AddressRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

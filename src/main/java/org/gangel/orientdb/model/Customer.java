@@ -1,5 +1,6 @@
-package com.epam.plktw.model;
+package org.gangel.orientdb.model;
 
+import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDate;
@@ -9,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.Version;
 
 @Data
+@Builder
 public class Customer {
 
     @Id
